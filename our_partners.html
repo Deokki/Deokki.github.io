@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Our Partners</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" alt="Logo RFR">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">          
+    <link rel="stylesheet" href="css/bootstrap.min.css">                 
+    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <link rel="stylesheet" href="css/templatemo-style.css"> 
+
+</head>                         
+
+<style type="text/css">
+    .wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  width: 1000px;
+  height: 150px;
+  position: center;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+}
+.slide img {
+  height: 100px;
+  padding: 0 30px 0 30px;
+}
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <section id="welcome" class="tm-content-box tm-banner margin-b-10">
+            <a href="index.html" style="text-decoration: none; color: black;">
+                <h6><b style="padding-bottom: -10;">MODAR REALTY</b></h6>
+            </a>
+            
+            <div class="tm-banner-inner">
+                <p class="tm-banner-title"><b>OUR PARTNERS </b></p>                        
+            </div>                    
+        </section>
+    </div>
+
+<br>
+
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slide">
+                <div class="slide"><img src="img/Uratex.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/cleaning_services.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/h2o.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/home_decor.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Manila_water.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Meralco.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Plumbering.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/sb.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/seven11.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/SM.jpg" alt="logo"></div>
+            </div>
+
+            <div class="slide">
+                <div class="slide"><img src="img/Uratex.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/cleaning_services.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/h2o.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/home_decor.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Manila_water.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Meralco.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/Plumbering.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/sb.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/seven11.jpg" alt="logo"></div>
+                <div class="slide"><img src="img/SM.jpg" alt="logo"></div>
+            </div>
+        </div>
+    </div>
+
+            <footer class="tm-footer">
+                <p class="text-xs-center">Copyright &copy; 2035 Room For Rent Company | Modar Design Concept</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>            
+<script src="js/jquery.magnific-popup.min.js"></script>     
+<script src="js/jquery.singlePageNav.min.js"></script>     
+<script> 
+    function setNavbar() {
+        if ($(document).scrollTop() > 160) {
+        $('.tm-sidebar').addClass('sticky');
+        } else {
+        $('.tm-sidebar').removeClass('sticky');
+        }
+    }                   
+
+    $(document).ready(function(){
+        $('.client-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplayspeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsice: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+            }        
+        }, {
+            breakpoint: 520,
+            setting: {
+                slidesToShow:3
+            }
+        }]
+    });
+});
+
+</script> 
